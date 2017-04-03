@@ -3,7 +3,6 @@ import { Link } from 'react-router';
 
 
 export default function Stations (props) {
-  console.log(props)
   return (
    <div>
       <h3>Stations</h3>
@@ -21,8 +20,3 @@ export default function Stations (props) {
     </div>
   );
 }
-
-
-
-
-
