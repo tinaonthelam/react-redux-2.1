@@ -1,8 +1,8 @@
 import React from 'react';
 
 export default function Lyrics (props) {
-
-  const text = props.lyrics.text;
+  console.log('props hur', props)
+  const text = props.lyrics;
   const artistQuery = props.artistQuery;
   const songQuery = props.songQuery;
   const handleSubmit = props.handleSubmit;
