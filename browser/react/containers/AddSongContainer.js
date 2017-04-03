@@ -2,6 +2,7 @@ import React from 'react';
 import AddSong from '../components/AddSong';
 import store from '../store';
 import {loadAllSongs, addSongToPlaylist} from '../action-creators/playlists';
+import { connect } from 'react-redux';
 
 class AddSongContainer extends React.Component {
 

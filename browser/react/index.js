@@ -20,7 +20,7 @@ import axios from 'axios';
 import store from './store';
 import {receiveAlbums, getAlbumById} from './action-creators/albums';
 import {receiveArtists, getArtistById} from './action-creators/artists';
-import {receivePlaylists, getPlaylistById, loadAllSongs} from './action-creators/playlists';
+import {receivePlaylists} from './action-creators/playlists';
 
 import { Provider } from 'react-redux';
 
@@ -56,6 +56,9 @@ const onPlaylistEnter = function (nextRouterState) {
 const onStationsEnter = function() {
   store.dispatch(loadAllSongs());
 };
+const onAlbumsEnter = function() {
+  store.dispatch(loadAllAlbums());
+}
 
 ReactDOM.render(
   <Provider store={store}>

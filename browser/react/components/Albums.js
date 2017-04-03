@@ -4,6 +4,7 @@ import {Link} from 'react-router';
 export default function Albums (props) {
 
   const albums = props.albums;
+    console.log(props)
 
   return (
     <div>
